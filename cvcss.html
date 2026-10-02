@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - KAO SOKLENG</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Cinzel:wght@600;700&display=swap');
+
+    :root {
+      --primary-color: #1a2a3a;
+      --secondary-color: #8c6d3f;
+      --accent-bg: #f7f5f0;
+      --text-dark: #2b2b2b;
+      --text-muted: #5f6368;
+      --page-bg: #eef1f5;
+      --card-bg: #ffffff;
+      --border-color: #dcd6cd;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Lora', serif;
+      background-color: var(--page-bg);
+      color: var(--text-dark);
+      line-height: 1.7;
+      padding: 50px 20px;
+    }
+
+    .resume-container {
+      max-width: 840px;
+      margin: 0 auto;
+      background-color: var(--card-bg);
+      padding: 55px 60px;
+      border-radius: 4px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+      border: 1px solid #e2ded7;
+    }
+
+    .header-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 25px;
+    }
+
+    .header-title {
+      font-family: 'Cinzel', serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--primary-color);
+      letter-spacing: 2px;
+      margin-bottom: 6px;
+    }
+
+    .subtitle {
+      display: inline-block;
+      font-family: 'Cinzel', serif;
+      color: var(--secondary-color);
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .contact-info {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      line-height: 1.7;
+      font-style: italic;
+    }
+
+    .avatar {
+      width: 170px;
+      height: 230px;
+      object-fit: cover;
+      border-radius: 4px;
+      border: 1px solid var(--border-color);
+      padding: 5px;
+      background-color: #ffffff;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .section-heading {
+      font-family: 'Cormorant Garamond', serif;
+      color: var(--primary-color);
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin: 35px 0 18px 0;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border-color);
+      position: relative;
+    }
+
+    .section-heading::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 60px;
+      height: 2px;
+      background-color: var(--secondary-color);
+    }
+
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .skill-badge {
+      background-color: var(--accent-bg);
+      color: var(--primary-color);
+      font-family: 'Lora', serif;
+      font-weight: 500;
+      font-size: 0.85rem;
+      padding: 5px 14px;
+      border-radius: 2px;
+      border: 1px solid var(--border-color);
+      letter-spacing: 0.5px;
+    }
+
+    .item-card {
+      margin-bottom: 25px;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 4px;
+    }
+
+    .item-title {
+      color: var(--primary-color);
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+    }
+
+    .item-subtitle {
+      font-style: italic;
+      color: var(--secondary-color);
+      font-size: 1rem;
+      margin-bottom: 6px;
+    }
+
+    .date-range {
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      font-style: italic;
+    }
+
+    p {
+      font-size: 0.95rem;
+      margin-bottom: 12px;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    li {
+      font-size: 0.93rem;
+      margin-bottom: 8px;
+      color: var(--text-dark);
+    }
+
+    li::marker {
+      color: var(--secondary-color);
+    }
+
+    footer {
+      margin-top: 50px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-color);
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      text-align: center;
+      font-family: 'Cinzel', serif;
+      letter-spacing: 1px;
+    }
+
+    @media print {
+      body {
+        background-color: #ffffff;
+        padding: 0;
+      }
+
+      .resume-container {
+        box-shadow: none;
+        border: none;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="resume-container">
+
+    <table class="header-table">
+      <tr>
+        <td valign="top">
+          <h1 class="header-title">KAO SOKLENG</h1>
+          <span class="subtitle">Junior Data Analyst</span>
+          <div class="contact-info">
+            HVGG+23H, Phnom Penh, Cambodia<br>
+            (123) 0713398065<br>
+            kaosokleng145@gmail.com
+          </div>
+        </td>
+        <td align="right" valign="top">
+          <img src="file_00000000537c720bb4a39fdd1422a7b3.png" alt="KAO SOKLENG Avatar" class="avatar">
+        </td>
+      </tr>
+    </table>
+
+    <h2 class="section-heading">Skills & Competencies</h2>
+    <div class="skills-container">
+      <span class="skill-badge">SQL</span>
+      <span class="skill-badge">Python</span>
+      <span class="skill-badge">Power BI</span>
+      <span class="skill-badge">R</span>
+      <span class="skill-badge">Excel</span>
+      <span class="skill-badge">Java</span>
+      <span class="skill-badge">C</span>
+      <span class="skill-badge">C++</span>
+      <span class="skill-badge">HTML</span>
+      <span class="skill-badge">CSS</span>
+      <span class="skill-badge">JavaScript</span>
+    </div>
+
+    <h2 class="section-heading">Education</h2>
+    <div class="item-card">
+      <div class="item-header">
+        <div class="item-title">Royal University of Phnom Penh</div>
+        <div class="date-range">2024 – Present</div>
+      </div>
+      <div class="item-subtitle">Bachelor of Science in Computer Science</div>
+
+      <p style="margin-top: 8px;">Developed an IoT smart parking system, designed normalized SQL database architectures,
+        completed CCNA network lab configurations, and mentored peers in Java OOP logic.</p>
+
+      <ul>
+        <li><b>IoT Smart Parking System:</b> Built an automated parking prototype using microcontrollers and sensors for
+          vehicle tracking.</li>
+        <li><b>Database Architecture:</b> Designed and normalized relational databases using advanced SQL procedures and
+          triggers.</li>
+        <li><b>Network Engineering:</b> Completed Cisco CCNA (Introduction to Networks) and configured OSPF routing and
+          DHCP security protocols.</li>
+        <li><b>Peer Mentorship:</b> Guided classmate study groups in troubleshooting Java OOP application logic and
+          calculus algorithms.</li>
+        <li><b>Robotics & Control:</b> Implemented PID algorithms and sensor modules (TCRT5000) for hardware automation
+          projects.</li>
+      </ul>
+    </div>
+
+    <h2 class="section-heading">Professional Experience</h2>
+    <div class="item-card">
+      <div class="item-title">Cambodian Tourism Revenue & Trend Analysis</div>
+      <div class="item-subtitle">Data Analytics (Women in Digital Scholarship)</div>
+      <p style="margin-top: 8px;"><b>Tools:</b> SQL, Python (Pandas, Seaborn), Excel, Power BI</p>
+
+      <ul>
+        <li>Cleaned and processed raw historical tourism datasets to analyze key performance metrics.</li>
+        <li>Performed correlation analysis to measure the relationship between international visitor arrivals and gross
+          revenue.</li>
+        <li>Designed interactive Power BI dashboards and Python visual charts (Seaborn) showcasing regional trends
+          (Phnom Penh, Siem Reap, coastal areas) and seasonal patterns.</li>
+      </ul>
+    </div>
+
+    <footer>
+      Copyright &copy; 2026 by www.kaosokleng.com • All rights reserved.
+    </footer>
+
+  </div>
+
+</body>
+
+</html>
